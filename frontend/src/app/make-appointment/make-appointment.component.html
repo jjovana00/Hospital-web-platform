@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    {{examName}}
+                </div>
+                <div class="card-body">
+                    <form>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" [(ngModel)]="selectedDate">
+
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" [(ngModel)]="selectedTime">
+                        <div> &nbsp;</div>
+                        <button (click) = 'makeAppointment()' class="btn btn-primary">Make appointemnt</button>
+                        <div class="form-group text-danger">
+                           {{message}}
+                        </div>
+                        <div class="form-group text-success">
+                            {{messageSuccessful}}
+                         </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Add new doctor
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter your firstname" [(ngModel)] = 'firstname'>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your lastname" [(ngModel)] = 'lastname'>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" [(ngModel)] = 'username'>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" [(ngModel)] = 'password'>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordCon">Confirm password</label>
+                            <input type="password" class="form-control" id="passwordCon" name="passwordCon" placeholder="Confirm password" [(ngModel)] = 'passwordCon'>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" [(ngModel)] = 'email'>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress">Adress</label>
+                            <input type="text" class="form-control" id="adress" name="adress" placeholder="Enter adress" [(ngModel)] = 'adress'>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Telephone</label>
+                            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Enter telephone" [(ngModel)] = 'telephone'>
+                        </div>
+                        <div class="form-group">
+                            <label for="licenceNum">Licence number</label>
+                            <input type="text" class="form-control" id="licenceNum" name="licenceNum" placeholder="Enter Licence Number" [(ngModel)] = 'licenceNum'>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialization">Specialization</label>
+                            <select class="form-control" id="items" name="items" [(ngModel)]="spec">
+                                <option *ngFor = 'let s of specs' [value] = 's.name'>{{s.name}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="Department">Department</label>
+                            <input type="text" class="form-control" id="department" name="department" placeholder="Enter department" [(ngModel)] = 'department'>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Upload photo</label>
+                            <input type="file" class="form-control" (change) = "onChange($event)" accept=".png, .jpg">
+                        </div>
+                        <div> &nbsp;</div>
+                        <button type = "submit" (click)="addDoctor()" class="btn btn-primary">Add doctor</button>
+                        <div class="form-group text-danger">
+                           {{message}}
+                        </div>
+                        <div class="form-group text-success">
+                            {{messageSuccess}}
+                         </div>
+                    </form>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

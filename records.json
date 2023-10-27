@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "650585ee9321690088539d29"
+  },
+  "appointmentId": 7,
+  "doctor": "ognjen123",
+  "specialization": "Endocrinology",
+  "patient": "milos123",
+  "dateTime": {
+    "$date": "2023-09-16T10:39:42.292Z"
+  },
+  "reasonForVisit": "Symptoms of hypothyroidism, such as fatigue, weight gain, or depression.",
+  "diagnosis": "Hashimoto's thyroiditis.",
+  "prescribedTherapy": "Radioactive iodine therapy (for hyperthyroidism).",
+  "nextControl": {
+    "$date": "2023-09-30T08:30:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6508255cf4e3ac1f5fa36216"
+  },
+  "appointmentId": 8,
+  "doctor": "ognjen123",
+  "specialization": "Endocrinology",
+  "patient": "jj190593d",
+  "dateTime": {
+    "$date": "2023-09-18T10:24:28.896Z"
+  },
+  "reasonForVisit": "Symptoms of hyperthyroidism, such as weight loss, anxiety, or rapid heartbeat.",
+  "diagnosis": "Hyperthyroidism ",
+  "prescribedTherapy": "Antithyroid medications (for hyperthyroidism).",
+  "nextControl": {
+    "$date": "2023-09-29T06:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650826f660ad2262282731ed"
+  },
+  "appointmentId": 4,
+  "doctor": "ognjen123",
+  "specialization": "Endocrinology",
+  "patient": "jj190593d",
+  "dateTime": {
+    "$date": "2023-07-17T10:24:28.896Z"
+  },
+  "reasonForVisit": "Diagnosis of Diabetes",
+  "diagnosis": "Type 2 Diabetes",
+  "prescribedTherapy": "Insulin Therapy",
+  "nextControl": {
+    "$date": "2023-10-29T06:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650abb256966dd8dfea61366"
+  },
+  "appointmentId": 5,
+  "doctor": "ognjen123",
+  "specialization": "Endocrinology",
+  "patient": "jj190593d",
+  "dateTime": {
+    "$date": "2023-09-20T09:28:05.233Z"
+  },
+  "reasonForVisit": "Excessive Thirst and Frequent Urination",
+  "diagnosis": "Gestational Diabetes Screening",
+  "prescribedTherapy": "Diabetes Management",
+  "nextControl": {
+    "$date": "2023-10-02T09:30:00.000Z"
+  },
+  "__v": 0
+}]

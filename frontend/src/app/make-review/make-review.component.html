@@ -1,0 +1,43 @@
+<div class="container mt-5" *ngIf="patientName">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <b>Make review for: {{patientName}}</b>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <th> <label for="reason">Reason for visit:</label></th>
+                            <td><textarea id="reason" name="reason" [(ngModel)]="reasonForVisit"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th><label for="diagnosis">Diagnosis:</label></th>
+                            <td><textarea id="diagnosis" name="diagnosis" [(ngModel)]="diagnosis"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th><label for="prescribedTherapy">Prescribed therapy:</label></th>
+                            <td><textarea id="prescribedTherapy" name="prescribedTherapy" [(ngModel)]="prescribedTherapy"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th><label for="date">Date:</label></th>
+                            <td><input type="date" id="date" name="date" [(ngModel)]="nextDate"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="time">Time:</label></th>
+                            <td> <input type="time" id="time" name="time" [(ngModel)]="nextTime"></td>
+                        </tr>
+                    </table>
+                    <button (click) = 'makeReview()' class="btn btn-primary">Make review</button>
+                    <div class="form-group text-danger">
+                        {{message}}
+                    </div>
+                    <div class="form-group text-success">
+                         {{messageSuccessful}}
+                    </div>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

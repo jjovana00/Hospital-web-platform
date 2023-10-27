@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    Report
+                </div>
+                <div class="card-body" *ngIf="r">
+                    <table>
+                        <tr>
+                            <th>Doctor</th>
+                           <td >{{r.doctor}}</td>
+                        </tr>
+                        <tr>
+                            <th>Docotor's specialization</th>
+                           <td >{{r.specialization}}</td>
+                        </tr>
+                        <tr>
+                            <th>Date of review</th>
+                           <td>{{r.dateTime | date: 'yyyy-MM-dd'}}</td>
+                        </tr>
+                        <tr>
+                            <th>Time</th>
+                           <td>{{r.dateTime | date: 'HH:mm'}}</td>
+                        </tr>
+                        <tr>
+                            <th>Reason for visit</th>
+                           <td>{{r.reasonForVisit}}</td>
+                        </tr>
+                        <tr>
+                            <th>Diagnosis</th>
+                           <td>{{r.diagnosis}}</td>
+                        </tr>
+                        <tr>
+                            <th>Prescribed therapy</th>
+                           <td>{{r.prescribedTherapy}}</td>
+                        </tr>
+                        <tr>
+                            <th>Reccomended date for next control</th>
+                           <td>{{r.nextControl | date: 'yyyy-MM-dd'}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

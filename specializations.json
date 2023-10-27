@@ -1,0 +1,103 @@
+[{
+  "_id": {
+    "$oid": "64fe0d6c60ad2262282731a4"
+  },
+  "name": "Pediatrics",
+  "examination": [
+    {
+      "name": "Growth and development assessment",
+      "approved": true,
+      "cost": 4500,
+      "duration": 45
+    },
+    {
+      "name": "Blood tests",
+      "approved": true,
+      "cost": 1000,
+      "duration": 15
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "64fe0dab60ad2262282731a5"
+  },
+  "name": "Pulmonology",
+  "examination": [
+    {
+      "name": "Bronchoscopy",
+      "approved": true,
+      "cost": 7000,
+      "duration": 75
+    },
+    {
+      "name": "Pulmonary function tests (spirometry)",
+      "cost": "3000",
+      "duration": 60,
+      "approved": true
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "64fe0dee60ad2262282731a6"
+  },
+  "name": "Endocrinology",
+  "examination": [
+    {
+      "name": "Thyroid function tests",
+      "approved": true,
+      "cost": 2000,
+      "duration": 20
+    },
+    {
+      "name": "Hormon level testing",
+      "cost": "3000",
+      "duration": 60,
+      "approved": false
+    },
+    {
+      "name": "Adrenal Function Tests",
+      "cost": 1700,
+      "duration": 10,
+      "approved": false
+    },
+    {
+      "name": "Insulin tolerance test (ITT)",
+      "cost": 2200,
+      "duration": 25,
+      "approved": true
+    },
+    {
+      "name": "Oral glucose tolerance test (OGTT)",
+      "cost": "1000",
+      "duration": 10,
+      "approved": true
+    },
+    {
+      "name": "Bone Density Tests:",
+      "cost": "12000",
+      "duration": 90,
+      "approved": true
+    }
+  ],
+  "__v": 9
+},
+{
+  "_id": {
+    "$oid": "64ff1729d086cea789669170"
+  },
+  "name": "Cardiology",
+  "examinations": [],
+  "__v": 2,
+  "examination": [
+    {
+      "name": "Stress Test",
+      "cost": "3000",
+      "duration": 45,
+      "approved": true
+    }
+  ]
+}]

@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6502d2a560ad2262282731cf"
+  },
+  "doctor": "ognjen123",
+  "examination": [
+    {
+      "name": "Thyroid function tests",
+      "cost": 2000,
+      "duration": 20,
+      "approved": true
+    },
+    {
+      "name": "Bone Density Tests:",
+      "cost": 15000,
+      "duration": 120,
+      "approved": true
+    }
+  ],
+  "__v": 19
+},
+{
+  "_id": {
+    "$oid": "6502f1c154c052348998ec51"
+  },
+  "doctor": "mina92",
+  "examination": [
+    {
+      "name": "Bronchoscopy",
+      "cost": 7000,
+      "duration": 75,
+      "approved": true
+    }
+  ],
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "6508299cf4e3ac1f5fa362e7"
+  },
+  "doctor": "olja123",
+  "examination": [
+    {
+      "name": "Stress Test",
+      "cost": "3000",
+      "duration": 45,
+      "approved": true
+    }
+  ],
+  "__v": 0
+}]

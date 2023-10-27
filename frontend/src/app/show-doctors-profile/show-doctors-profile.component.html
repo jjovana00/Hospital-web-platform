@@ -1,0 +1,122 @@
+<div class="container rounded bg-white" *ngIf="user">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                <img class="mt-5" [src]="'http://localhost:4000/userImages/' + user.img" >
+                <span id="name" >{{user.firstname}} {{user.lastname}}</span>
+            </div>
+        </div>
+        <div class="col-md-8">  
+            <div class="p-3 py-5">
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Firstname: </span>{{user.firstname}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Lastname: </span>{{user.lastname}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Adress: </span>{{user.adress}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Email: </span>{{user.email}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Telephone: </span>{{user.telephone}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" *ngIf="user.type == 1">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Specialization: </span>{{user.specialization}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2" *ngIf="user.type == 1">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Department: </span>{{user.department}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" *ngIf="user.type == 1">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="label">Licence number: </span>{{user.licenceNum}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" *ngIf="user && myExaminations">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card  my-3">
+            <div class="card-body">
+                <h4>Doctors examinations:</h4>
+                <table cals="table">
+                    <thead>
+                        <tr  class="mtRow">
+                            <th class="myCol">
+                                Name
+                            </th>
+                            <th class="myCol">
+                                Cost[rsd]
+                            </th>
+                            <th class="myCol">
+                                Duration[min]
+                            </th>
+                            <th class="myCol">
+                                Make appointment
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let e of myExaminations">
+                            <td class="myCol">
+                                {{e.name}}
+                            </td>
+                            <td class="myCol">
+                            {{e.cost}}
+                            <td class="myCol">
+                                {{e.duration}}
+                            </td>
+                            <td class="myCol">
+                                <button type="button" class="btn btn-info" (click) = "makeAppointment(e)">Make appintment</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>  
+</div>

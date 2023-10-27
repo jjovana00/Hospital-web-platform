@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h4 style="text-align: center;">{{message}}</h4>
+        <div class="card mt-3" *ngFor = 'let r of records'>
+            <div class="row g-0">
+            <div class="col-md-10">
+                <div class="card-body ">
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Doctor</th>
+                               <td >{{r.doctor}}</td>
+                            </tr>
+                            <tr>
+                                <th>Docotor's specialization</th>
+                               <td >{{r.specialization}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date of review</th>
+                               <td>{{r.dateTime | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                               <td>{{r.dateTime | date: 'HH:mm'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Reason for visit</th>
+                               <td>{{r.reasonForVisit}}</td>
+                            </tr>
+                            <tr>
+                                <th>Diagnosis</th>
+                               <td>{{r.diagnosis}}</td>
+                            </tr>
+                            <tr>
+                                <th>Prescribed therapy</th>
+                               <td>{{r.prescribedTherapy}}</td>
+                            </tr>
+                            <tr>
+                                <th>Reccomended date for next control</th>
+                               <td>{{r.nextControl | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-1"></div>
+</div>

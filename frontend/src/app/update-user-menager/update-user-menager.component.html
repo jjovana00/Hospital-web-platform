@@ -1,0 +1,52 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Update user
+                </div>
+                <div class="card-body" *ngIf = 'user'>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstname">New firstname</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" [placeholder] = "user.firstname" [(ngModel)] = 'firstname'>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">New lastname</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" [placeholder] = "user.lastname" [(ngModel)] = 'lastname'>
+                        </div>
+                        <div class="form-group">
+                            <label for="adress">New adress</label>
+                            <input type="text" class="form-control" id="adress" name="adress" [placeholder]="user.adress" [(ngModel)] = 'adress'>
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">New telephone</label>
+                            <input type="text" class="form-control" id="telephone" name="telephone" [placeholder]="user.telephone" [(ngModel)] = 'telephone'>
+                        </div>
+                        <div class="form-group" *ngIf="user.type == 1">
+                            <label for="licenceNum">New licence number</label>
+                            <input type="number" class="form-control" id="licenceNum" name="licenceNum" [placeholder]="user.licenceNum" [(ngModel)] = 'licenceNum'>
+                        </div>
+                        <div class="form-group" *ngIf="user.type == 1">
+                            <label for="licenceNum">New department</label>
+                            <input type="text" class="form-control" id="department" name="department" [placeholder]="user.department" [(ngModel)] = 'department'>
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">New photo</label>
+                            <input type="file" class="form-control" (change) = "onChange($event)" accept=".png, .jpg">
+                        </div>
+                        <div> &nbsp;</div>
+                        <button type = "submit" (click)="update()"  class="btn btn-primary">Update</button>
+                        <div class="form-group text-danger">
+                           {{message}}
+                        </div>
+                        <div class="form-group text-success">
+                            {{messageSuccess}}
+                         </div>
+                    </form>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

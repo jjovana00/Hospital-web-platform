@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card mb-3" *ngFor = 'let u of requests'>
+            <div class="row g-0">
+            <div class="col-md-3 card-body d-flex  align-items-center">
+                <img [src]="'http://localhost:4000/userImages/' + u.img" class="img-fluid rounded-start img-in-card profilePhoto" alt="...">  
+            </div>
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h5 class="card-title">{{u.firstname}} {{u.lastname}}</h5>
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Username</th>
+                               <td >{{u.username}}</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                               <td>{{u.email}}</td>
+                            </tr>
+                            <tr>
+                                <th>Adress</th>
+                               <td>{{u.adress}}</td>
+                            </tr>
+                            <tr>
+                                <th>Telephone</th>
+                               <td>{{u.telephone}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-body d-flex  align-items-center">
+                <button type="submit" class="btn btn-success myButton" (click)= "acceptPatient(u.username)">Accept</button>
+                <button type="submit" class="btn btn-danger" (click)= "rejectPatient(u.username)">Reject</button>        
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

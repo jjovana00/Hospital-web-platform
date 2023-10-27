@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h4 style="text-align: center;">{{message}}</h4>
+        <div class="card mt-3" *ngFor = 'let a of appointments'>
+            <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h5 class="card-title"> {{a.examName}}</h5>
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Patient</th>
+                               <td >{{a.patientName}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                               <td>{{a.dateTime | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                               <td>{{a.dateTime | date: 'HH:mm'}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" class="btn btn-dark" (click)= "getRecords(a.patient)">Patient records</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 card-body d-flex  align-items-center">
+                <textarea [(ngModel)]="cancelMessage[appointments.indexOf(a)]" placeholder="Reason for cancellation"></textarea>
+                <button type="submit" class="btn btn-danger" style="margin-left: 2%; margin-right: 2%;" (click)= "cancel(a)">Cancel</button>
+                <span class="text-danger">{{messageError[appointments.indexOf(a)]}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-1"></div>
+</div>

@@ -1,0 +1,144 @@
+[{
+  "_id": {
+    "$oid": "6504753129741c835cf98a06"
+  },
+  "id": 2,
+  "doctor": "ognjen123",
+  "patient": "jj190593d",
+  "examName": "Thyroid function tests",
+  "dateTime": {
+    "$date": "2023-09-16T12:10:00.000Z"
+  },
+  "duration": 20,
+  "__v": 0,
+  "department": "Endocrinology",
+  "hasReview": false
+},
+{
+  "_id": {
+    "$oid": "6504845a60ad2262282731e1"
+  },
+  "id": 4,
+  "doctor": "ognjen123",
+  "patient": "jj190593d",
+  "examName": "Oral glucose tolerance test (OGTT)",
+  "dateTime": {
+    "$date": "2023-07-16T12:00:00.000Z"
+  },
+  "duration": 10,
+  "department": "Endocrinology",
+  "__v": 0,
+  "hasReview": true
+},
+{
+  "_id": {
+    "$oid": "65048bd93a38ba247620c9e7"
+  },
+  "id": 5,
+  "doctor": "ognjen123",
+  "patient": "jj190593d",
+  "examName": "Oral glucose tolerance test (OGTT)",
+  "dateTime": {
+    "$date": "2023-09-16T12:00:00.000Z"
+  },
+  "duration": 10,
+  "department": "Endocrinology",
+  "__v": 0,
+  "hasReview": true
+},
+{
+  "_id": {
+    "$oid": "65049ade3a38ba247620ca21"
+  },
+  "id": 7,
+  "doctor": "ognjen123",
+  "patient": "milos123",
+  "examName": "Thyroid function tests",
+  "dateTime": {
+    "$date": "2023-09-15T18:00:00.000Z"
+  },
+  "duration": 20,
+  "department": "Endocrinology",
+  "__v": 0,
+  "hasReview": true
+},
+{
+  "_id": {
+    "$oid": "65049b1860ad2262282731e2"
+  },
+  "id": 8,
+  "doctor": "ognjen123",
+  "patient": "jj190593d",
+  "examName": "Thyroid function tests",
+  "dateTime": {
+    "$date": "2023-09-15T12:10:00.000Z"
+  },
+  "duration": 20,
+  "__v": 0,
+  "department": "Endocrinology",
+  "hasReview": true
+},
+{
+  "_id": {
+    "$oid": "6505a658f4e3ac1f5fa361af"
+  },
+  "id": 9,
+  "doctor": "mina92",
+  "patient": "milos123",
+  "examName": "Bronchoscopy",
+  "dateTime": {
+    "$date": "2023-10-01T06:00:00.000Z"
+  },
+  "duration": 75,
+  "department": "Pulmonology",
+  "hasReview": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65082737f4e3ac1f5fa36258"
+  },
+  "id": 9,
+  "doctor": "ognjen123",
+  "patient": "jj190593d",
+  "examName": "Bone Density Tests:",
+  "dateTime": {
+    "$date": "2023-09-30T14:00:00.000Z"
+  },
+  "duration": 120,
+  "department": "Endocrinology",
+  "hasReview": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650827b1f4e3ac1f5fa36281"
+  },
+  "id": 10,
+  "doctor": "mina92",
+  "patient": "milos123",
+  "examName": "Bronchoscopy",
+  "dateTime": {
+    "$date": "2023-09-18T10:45:00.000Z"
+  },
+  "duration": 75,
+  "department": "Pulmonology",
+  "hasReview": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65099dd7638dcd11e67bfaf1"
+  },
+  "id": 11,
+  "doctor": "mina92",
+  "patient": "jj190593d",
+  "examName": "Bronchoscopy",
+  "dateTime": {
+    "$date": "2023-09-22T15:00:00.000Z"
+  },
+  "duration": 75,
+  "department": "Pulmonology",
+  "hasReview": false,
+  "__v": 0
+}]

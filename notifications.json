@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "65084f55d39515a295b061c7"
+  },
+  "reciever": "jj190593d",
+  "notification": "Change of examination: Pulmonary function tests (spirometry) cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-08-18T13:23:33.276Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65084f55d39515a295b061c9"
+  },
+  "reciever": "milos123",
+  "notification": "Change of examination: Pulmonary function tests (spirometry) cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-08-18T13:23:33.277Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65084fac60ad2262282731f2"
+  },
+  "reciever": "jj190593d",
+  "notification": "New promotion: Throughout enitre July, a 10% discount on all cardiology examinations.",
+  "dateTime": {
+    "$date": "2023-06-18T13:22:04.380Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65084fb960ad2262282731f3"
+  },
+  "reciever": "milos123",
+  "notification": "New promotion: Throughout enitire July, a 10% discount on all cardiology examinations.",
+  "dateTime": {
+    "$date": "2023-06-18T13:22:04.380Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6508500ed39515a295b061cf"
+  },
+  "reciever": "jj190593d",
+  "notification": "New promotion: Throughout entire October, a 10% discount on all pediatric examinations.",
+  "dateTime": {
+    "$date": "2023-09-18T13:26:38.397Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6508500ed39515a295b061d1"
+  },
+  "reciever": "milos123",
+  "notification": "New promotion: Throughout entire October, a 10% discount on all pediatric examinations.",
+  "dateTime": {
+    "$date": "2023-09-18T13:26:38.398Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085027d39515a295b061d8"
+  },
+  "reciever": "jj190593d",
+  "notification": "Change of examination: Insulin tolerance test (ITT) cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-09-18T13:27:03.414Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65085027d39515a295b061da"
+  },
+  "reciever": "milos123",
+  "notification": "Change of examination: Insulin tolerance test (ITT) cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-09-18T13:27:03.415Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650850abd39515a295b061dd"
+  },
+  "reciever": "jj190593d",
+  "notification": "New promotion: At the beginning of next year, the gynecology department will be opening.",
+  "dateTime": {
+    "$date": "2023-09-18T13:29:15.105Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650850abd39515a295b061df"
+  },
+  "reciever": "milos123",
+  "notification": "New promotion: At the beginning of next year, the gynecology department will be opening.",
+  "dateTime": {
+    "$date": "2023-09-18T13:29:15.107Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65086754dfb777b963e14ffb"
+  },
+  "reciever": "jj190593d",
+  "notification": "Cancellation of Bronchoscopy: Doctor is on holiday. Try to make reservation for Octobar!,",
+  "dateTime": {
+    "$date": "2023-09-18T15:05:56.274Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650ab8496966dd8dfea6131b"
+  },
+  "reciever": "jj190593d",
+  "notification": "Change of examination: Thyroid function tests cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-09-20T09:15:53.230Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650ab8496966dd8dfea6131d"
+  },
+  "reciever": "milos123",
+  "notification": "Change of examination: Thyroid function tests cost/time is changed!",
+  "dateTime": {
+    "$date": "2023-09-20T09:15:53.234Z"
+  },
+  "isRead": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650ab8f86966dd8dfea61330"
+  },
+  "reciever": "jj190593d",
+  "notification": "New promotion: 20% discount only on 30th of September",
+  "dateTime": {
+    "$date": "2023-09-20T09:18:48.240Z"
+  },
+  "isRead": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650ab8f86966dd8dfea61332"
+  },
+  "reciever": "milos123",
+  "notification": "New promotion: 20% discount only on 30th of September",
+  "dateTime": {
+    "$date": "2023-09-20T09:18:48.240Z"
+  },
+  "isRead": false,
+  "__v": 0
+}]

@@ -1,0 +1,32 @@
+Angular and Related Packages:
+Angular CLI: https://cli.angular.io/
+
+Bootstrap:
+Bootstrap: https://getbootstrap.com/
+
+jQuery:
+jQuery: https://jquery.com/
+
+RxJS:
+RxJS: https://rxjs.dev/
+
+TypeScript:
+TypeScript: https://www.typescriptlang.org/
+
+Zone.js:
+Zone.js: https://zonejs.dev/
+
+----------------------------------------------------------------
+Nodemon: https://www.npmjs.com/package/nodemon
+TSLint: https://www.npmjs.com/package/tslint
+TypeScript: https://www.npmjs.com/package/typescript
+@types/cors: https://www.npmjs.com/package/@types/cors
+@types/express: https://www.npmjs.com/package/@types/express
+@types/mongodb: https://www.npmjs.com/package/@types/mongodb
+@types/mongoose: https://www.npmjs.com/package/@types/mongoose
+@types/node: https://www.npmjs.com/package/@types/node
+Cors: https://www.npmjs.com/package/cors
+Express: https://www.npmjs.com/package/express
+MongoDB: https://www.npmjs.com/package/mongodb
+Mongoose: https://www.npmjs.com/package/mongoose
+Multer: https://www.npmjs.com/package/multer

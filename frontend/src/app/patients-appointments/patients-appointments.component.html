@@ -1,0 +1,79 @@
+<div class="row" *ngIf="flag == true">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h4 style="text-align: center;">{{message}}</h4>
+        <div class="card mt-3" *ngFor = 'let a of futureApp'>
+            <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h5 class="card-title"> {{a.examName}}</h5>
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Doctor</th>
+                               <td >{{a.doctor}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                               <td>{{a.dateTime | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                               <td>{{a.dateTime | date: 'HH:mm'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Department</th>
+                               <td>{{a.department}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-body d-flex  align-items-center">
+                <button type="submit" class="btn btn-danger" (click)= "cancel(a)">Cancel</button>   
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-1"></div>
+</div>
+
+<div class="row" *ngIf="flag == true">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card mt-3" *ngFor = 'let a of pastApp'>
+            <div class="row g-0">
+            <div class="col-md-6">
+                <div class="card-body ">
+                    <h5 class="card-title"> {{a.examName}}</h5>
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Doctor</th>
+                               <td >{{a.doctor}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                               <td>{{a.dateTime | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                               <td>{{a.dateTime | date: 'HH:mm'}}</td>
+                            </tr>
+                            <tr>
+                                <th>Department</th>
+                               <td>{{a.department}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 card-body d-flex  align-items-center">
+                <button *ngIf="a.hasReview" type="submit" class="btn btn-info" (click)= "viewReport(a.id)">View report</button>
+                <span *ngIf="a.hasReview == false">The report is being prepared</span>   
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-1"></div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <b>Add new promotion!</b>
+                </div>
+                <div class="card-body">
+                    <table> 
+                        <tr>
+                            <th><label for="promotion">New promotion:</label></th>
+                            <td><textarea id="promotion" name="promotion" [(ngModel)]="promotion"></textarea></td>
+                        </tr>
+                    </table>
+                    <button (click) = 'addPromotion()' class="btn btn-primary">Post</button>
+                    <div class="form-group text-success">
+                         {{messageSuccessful}}
+                    </div>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

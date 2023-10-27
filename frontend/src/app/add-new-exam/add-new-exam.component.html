@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Add new specialization
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter examination name" [(ngModel)] = 'name'>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration</label>
+                            <input type="number" class="form-control" id="duration" name="duration" placeholder="Enter duration in minutes" [(ngModel)] = 'duration'>
+                        </div>
+                        <div class="form-group">
+                            <label for="cost">Cost</label>
+                            <input type="cost" class="form-control" id="cost" name="cost" placeholder="Enter cost in RSD" [(ngModel)] = 'cost'>
+                        </div>
+                        <div> &nbsp;</div>
+                        <button (click) = 'addNewExam()' class="btn btn-primary">Add</button>
+                        <div class="form-group text-danger">
+                           {{message}}
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div> &nbsp;</div>
+        </div>
+    </div>
+</div>

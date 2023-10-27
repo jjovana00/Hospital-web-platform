@@ -1,0 +1,203 @@
+[{
+  "_id": {
+    "$oid": "64f7307e60ad22622827318a"
+  },
+  "username": "peraperic00",
+  "password": "Pera123!",
+  "firstname": "Petar",
+  "lastname": "Peric",
+  "adress": "Primorska 22",
+  "telephone": "0694710330",
+  "email": "pera@gmail.com",
+  "type": 0,
+  "approved": -1,
+  "department": "",
+  "licenceNum": 0,
+  "specialization": ""
+},
+{
+  "_id": {
+    "$oid": "64f8734fa2ec83665532d5a1"
+  },
+  "firstname": "Jovana",
+  "lastname": "Jaćimović",
+  "username": "jj190593d",
+  "password": "Jovana123!",
+  "email": "jjovana@gmail.com",
+  "adress": "Prizrenska 22",
+  "telephone": "0694710330",
+  "type": 0,
+  "approved": 1,
+  "__v": 0,
+  "department": "",
+  "licenceNum": 0,
+  "specialization": "",
+  "img": "1695200292691-avatar6.jpg"
+},
+{
+  "_id": {
+    "$oid": "64f8a22c60ad226228273191"
+  },
+  "username": "mina92",
+  "password": "Mina123!",
+  "firstname": "Mina",
+  "lastname": "Minić",
+  "adress": "Ustanička 10",
+  "telephone": "0694710330",
+  "email": "mina@gmail.com",
+  "type": 1,
+  "approved": 1,
+  "department": "Pulmonology",
+  "specialization": "Pulmonology",
+  "licenceNum": 897856,
+  "img": "1695034001017-avatar4.jpg"
+},
+{
+  "_id": {
+    "$oid": "64f9b581f46a0dd55c24902a"
+  },
+  "firstname": "Naka",
+  "lastname": "Stojanovski",
+  "username": "nakastoja",
+  "password": "Naka123!",
+  "email": "nakastoja@gmail.com",
+  "adress": "Primorska 22",
+  "telephone": "0694710330",
+  "type": 2,
+  "approved": 1,
+  "__v": 0,
+  "img": "1694706484859-user1.png"
+},
+{
+  "_id": {
+    "$oid": "64fb29b9773ace0663a25307"
+  },
+  "firstname": "Ognjen",
+  "lastname": "Radojević",
+  "username": "ognjen123",
+  "password": "Ognjen123!",
+  "email": "ognjen.radojevic@hotmail.com",
+  "adress": "Ustanička 10",
+  "telephone": "064222333",
+  "type": 1,
+  "approved": 1,
+  "specialization": "Endocrinology",
+  "department": "Endocrinology",
+  "licenceNum": 4800,
+  "__v": 0,
+  "img": "1695063755853-avatar2.jpg"
+},
+{
+  "_id": {
+    "$oid": "64fe00bef4d7743b0fe81194"
+  },
+  "firstname": "Aleksa",
+  "lastname": "Andrijašević",
+  "username": "aleksasrb",
+  "password": "Aleksa123!",
+  "email": "aleksa@gmail.com",
+  "adress": "Ustanička 10",
+  "telephone": "065555444",
+  "type": 1,
+  "approved": 1,
+  "specialization": "Pediatrics",
+  "department": "Pediatrics",
+  "licenceNum": 3896,
+  "__v": 0,
+  "img": "default.jpg"
+},
+{
+  "_id": {
+    "$oid": "65038953596a0bd0cc52d1e2"
+  },
+  "firstname": "Miloš",
+  "lastname": "Jaćimović",
+  "username": "milos123",
+  "password": "Milos123!",
+  "email": "milos.jacimovic@hotmail.com",
+  "adress": "Đorđa Kratovca 74",
+  "telephone": "062471033",
+  "type": 0,
+  "approved": 1,
+  "specialization": "",
+  "department": "",
+  "licenceNum": 0,
+  "img": "1694730579331-avatar3.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65038b74596a0bd0cc52d1ec"
+  },
+  "firstname": "Mihajlo",
+  "lastname": "Radojevic",
+  "username": "miki123",
+  "password": "Miki123!",
+  "email": "miki@gmail.com",
+  "adress": "Prizrenska 22",
+  "telephone": "0694710330",
+  "type": 0,
+  "approved": 0,
+  "specialization": "",
+  "department": "",
+  "licenceNum": 0,
+  "img": "default.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65082a91f4e3ac1f5fa36301"
+  },
+  "firstname": "Olja",
+  "lastname": "Jaćimović",
+  "username": "olja123",
+  "password": "Olja123!",
+  "email": "olja@gmail.com",
+  "adress": "Josifa Pančića 4",
+  "telephone": "062241598",
+  "type": 0,
+  "approved": 0,
+  "specialization": "",
+  "department": "",
+  "licenceNum": 0,
+  "img": "1695034001017-avatar4.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65099efe638dcd11e67bfb35"
+  },
+  "firstname": "Dragoljub",
+  "lastname": "Jaćimović",
+  "username": "dragi123",
+  "password": "Dragi123!",
+  "email": "dragi@gmail.com",
+  "adress": "Balkanska 13",
+  "telephone": "0698784561",
+  "type": 0,
+  "approved": 0,
+  "specialization": "",
+  "department": "",
+  "licenceNum": 0,
+  "img": "default.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650ab4bc6966dd8dfea612f1"
+  },
+  "firstname": "Lazan",
+  "lastname": "Laznić",
+  "username": "laki123",
+  "password": "Laki123!",
+  "email": "laki@gmail.com",
+  "adress": "Đorđa Kratovca 74",
+  "telephone": "0694710330",
+  "type": 0,
+  "approved": -1,
+  "specialization": "",
+  "department": "",
+  "licenceNum": 0,
+  "img": "default.jpg",
+  "__v": 0
+}]

@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-body">
+                <table >
+                    <tr>
+                        <th class="fromCol">
+                            Add new specialization 
+                        </th>
+                        <td class="fromCol">
+                           <input type = "text" name="newSpec" [(ngModel)] = "newSpec" placeholder="">
+                        <td class="fromCol">
+                            <button class="btn btn-info" (click) = "addSpec()">Add</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div *ngFor = "let s of specs" class="card ">
+            <div class="card-header backgroundColor">
+                <table class="table ">
+                    <tr>
+                        <td class="col ">
+                            <h5 class="backgroundColor">{{s.name}}</h5>
+                        </td>
+                        <td class="col">
+                            Add new examination <button class="btn btn-info" (click) = "addNewExam(s.name)">Add</button>
+                        </td>
+                        <!--<td class="col">
+                            Delete specialization <button class="btn btn-danger" (click) = "deleteSpec(s._id)">Delete</button>
+                        </td>-->
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="table card-body" *ngFor = "let e of s.examination" >
+                    <thead>
+                        <tr>
+                            <td class="col">
+                               &nbsp;
+                            </td>
+                            <td class="col">
+                            Accept/Reject
+                            </td>
+                            <td class="col">
+                                Delete
+                            </td>
+                            <td class="col">
+                                Update
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="col">
+                                <div>{{e.name}}</div>
+                            </th>
+                            <td class="col" *ngIf="!e.approved; else approved">
+                                <button class="btn btn-success myButton"(click) = "acceptExam(e.name, s.name)">Accept</button>
+                                <button class="btn btn-danger"(click) = "rejectExam(e.name, s.name)">Reject</button>
+                            </td>
+                            <ng-template #approved>
+                                <td class="col" #approved>&nbsp;</td>
+                                <td class="col" #approved>
+                                    <button class="btn btn-danger  "(click) = "deleteExam(e.name, s.name)">Delete</button>
+                                </td>
+                                <td class="col"approved>
+                                    <button class="btn btn-info  "(click) = "updateExam(e.name, s.name)">Update</button>
+                                </td>
+                            </ng-template>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>

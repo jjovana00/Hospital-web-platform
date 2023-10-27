@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h4 style="text-align: center;">{{message}}</h4>
+        <div class="card mt-3" *ngFor = 'let n of notifications' [class.read]="n.isRead==true">
+            <div class="row g-0">
+            <div class="col-md-10">
+                <div class="card-body ">
+                    <div class="card-text">
+                        <table>
+                            <tr>
+                                <th>Notification</th>
+                               <td >{{n.notification}}</td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                               <td>{{n.dateTime | date: 'yyyy-MM-dd'}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button [hidden]="n.isRead" (click)="markAsRead(n)" class="btn btn-light">Mark as read</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="col-md-1"></div>
+</div>
